@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Instagram</title>
+        <style>
+            .register {
+                position: absolute;
+                right:20%;
+                top:5%;
+                padding: 30px;
+            }
+            .register img{
+                width: 200px;
+                display: block;
+                margin: auto;
+            }
+            .border{
+                border: 1px rgb(219, 219, 219) solid;
+                /* box-shadow: 1px 1px 5px rgb(119, 103, 103); */
+                padding: 30px;
+                margin-bottom: 15px;
+                margin-top: 10px;
+            }
+            .border2{
+                border: 1px rgb(219, 219, 219) solid;
+                /* background-color: rgb(240, 238, 238); */
+                box-shadow: 1px 1px 5px rgb(119, 103, 103);
+                padding: 10px;
+                margin-bottom: 15px;
+                margin-top: 10px;
+            }
+            .button-enter{
+                display: block;
+                background-color: rgb(30, 101, 255);
+                color: white;
+                border: 0.0px;
+                padding: 10px;
+                padding-right: 120px;
+                padding-left: 127px;
+                border-radius: 5px;
+                margin: 5px;
+                margin-top: 15px;
+                font-size: 19px;
+                cursor: pointer;
+            }
+            .button-enter:active{
+                background-color: #234080;
+            }
+            .forgot-password{
+                display: block;
+                color: rgb(5, 5, 5);
+                font-size: 15px;
+                text-decoration: none;
+                text-align: center;
+                margin-top: 25px;
+            }
+            .input{
+                width: 88%;
+                padding: 15px;
+                border: 0.0px;
+                border-radius: 5px;
+                margin: 5px;
+                font-size: 13px;
+            }
+            /* */
+            .orr {
+                margin: 10px 0;
+                width: 300px;
+                height: 14px;
+                display: flex;
+                flex-direction: row;
+            }
+            .line {
+                width: 150px;
+                border-bottom: 1px solid rgb(219, 219, 219);
+            }
+            .or {
+                font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                font-style: normal;
+                font-variant-caps: normal;
+                font-weight: 600;
+                margin: 0 18px;
+                color: rgb(142, 142, 142);
+            }
+            .button2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20px;
+                margin-left: 50px;
+                border: none;
+                background-color: white;
+                color: rgb(56, 81, 133);
+                font-weight: 600;
+                font-size: 14px;
+
+            }
+            .button2 img {
+                width: 20px;
+                margin-right: 10px;
+            }
+            /* */
+            .account {
+                font-size: 14px;
+                font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 41px;
+                padding: 10px 0;
+                background-color: white;
+                border: 1px rgb(219, 219, 219) solid;
+                margin-bottom: 10px;
+            }
+            .account a {
+                margin-left: 5px;
+                color: rgb(0, 122, 237);
+                text-decoration: none;
+            }
+            .download {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .download img {
+                width: 130px;
+                margin: 10px;
+            }
+
+            /* phone */
+            .phone {
+                position: absolute;
+                left: 22%;
+                top: 8%;
+                width: 100%;
+                height: 100%;
+            }
+            /* footer */
+            .footer {
+                position: absolute;
+                top: 90%;
+                font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                font-size: 12px;
+                order: 2;
+                display: flex;
+                flex-direction: column;
+                align-self: flex-end;
+                width: 100%;
+                height: 134px;
+                min-height: 70px;
+            }
+            .first-line {
+                font-family: inherit;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .first-line a {
+                margin-left: 10px;
+                text-decoration: none;
+                color: rgb(142, 142, 142);
+                font-size: 12px;
+            }
+
+            .second-line {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                color: rgb(142, 142, 142);
+                font-size: inherit;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="phone">
+              <img src="./static/img/mobile.png" />
+            </div>
+        </div>
+        <div class="register">
+            <div class="border">
+                <img src="./static/img/logo.png" alt="logo" />
+                <input type = "text" class="border2 input" placeholder="Телефон, имя пользователя или эл. адрес">
+                <br>
+                <input class="border2 input" placeholder="Пароль">
+                <button class="button-enter">Войти</button>
+                <br>
+                <div class="orr">
+                    <div class="line"></div>
+                    <div class="or">or</div>
+                    <div class="line"></div>
+                </div>
+                <button class="button2">
+                    <img src="./static/img/fb.png">
+                    Войти через Facebook
+                </button>
+                <a href="" class="forgot-password">
+                    Забыли пароль?
+                </a>
+            </div>
+            <div class=" border account">
+                <p>У вас еще нет аккаунта?</p>
+                <a href="">Зарегистрироваться</a>
+            </div>
+                <p class="forgot-password">Установите приложение.</p>
+                <div class="download">
+                <img alt="Скачать из App Store" class="app" src="https://static.cdninstagram.com/rsrc.php/v3/y9/r/E_2mQvC3HG-.png">
+                <img alt="Скачать из Google Play" class="app" src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png">
+            </div>
+        </div>
+        <div class="footer">
+            <div class="first-line">
+                <a href="">Meta</a>
+                <a href="">About</a>
+                <a href="">Blog</a>
+                <a href="">Jobs</a>
+                <a href="">Help</a>
+                <a href="">API</a>
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Locations</a>
+                <a href="">Instagram lite</a>
+                <a href="">Contact uploading & Non-Users</a>
+                <a href="">Meta Verified</a>
+            </div>
+            <div class="second-line">
+                <select name="language" id="sel-lang">
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                </select>
+                <p>© 2023 Instagram from Meta</p>
+            </div>
+        </div>
+    </body>
+</html>
