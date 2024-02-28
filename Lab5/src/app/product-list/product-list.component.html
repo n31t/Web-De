@@ -1,0 +1,45 @@
+<h2>Products</h2>
+
+<div *ngFor = "let product of products" class="container-2">
+    <h3>
+        <a [title]="product.name + ' details'" href="{{ product.productLink }}">
+          {{ product.name }}
+        </a>
+      </h3>
+      <!-- Image -->
+        <p *ngIf="product.imageUrl; else noImage">
+            <img src="{{ product.imageUrl }}" height="150">
+        </p>
+        <ng-template #noImage>
+            <p>
+                <img src="assets/images/placeholder.png" hidth="150">
+            </p>
+        </ng-template>
+        <!-- Rating -->
+        <p>
+            <span *ngFor="let i of [].constructor(product.rating); 
+        let index = index">
+            <img src="assets/images/star.jpg" width="20">
+            </span>
+        </p>
+
+        <!-- Description -->
+        <pre *ngIf = "product.description">
+            {{ product.description }}
+        </pre>
+      <button (click)="shareProd(product)" class="button-2">
+        Share
+      </button>
+
+      <app-product-alerts 
+      [product] = "product"
+      (notify) = "onNotify()"
+      >
+
+      </app-product-alerts>
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
