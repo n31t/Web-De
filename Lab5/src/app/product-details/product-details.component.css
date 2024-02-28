@@ -1,0 +1,11 @@
+.container-4 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    padding: 5px;
+    margin: 10px;
+  }
+.like {
+    background-color:green;
+    height: 25px;
+}
