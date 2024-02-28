@@ -1,5 +1,8 @@
 <app-top-bar></app-top-bar>
-
+<div class="container-3">
+  <div class="categories">
+    <a *ngFor="let category of categories" [routerLink]="['/categories', category.name]"> {{ category.name }} </a>
+  </div>
 <div class="container">
   <router-outlet></router-outlet>
 </div>

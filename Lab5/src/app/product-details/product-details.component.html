@@ -1,0 +1,11 @@
+<h2>Product Details</h2>
+
+<div *ngIf="product">
+    <img src="{{product.image}}">
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price}} ₸</h4>
+  <p>{{ product.description }}</p>
+
+  <button (click)="addToCart(product)">Add to cart</button>
+  <button class="like" (click)="like(product)">Like</button>
+</div>
