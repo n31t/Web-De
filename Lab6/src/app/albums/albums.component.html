@@ -1,9 +1,8 @@
 <a [routerLink]="['../']">Back</a>
 
-<fieldset>
-    <input type="text" [(ngModel)]="newAlbum.title" >
-    <button class="btn-add" (click)="addAlbum()">Add album</button>
-</fieldset>
+<input type="text" [(ngModel)]="newAlbum.title" >
+<button class="btn-add" (click)="addAlbum()">Add album</button>
+
 
 <ol *ngIf="loaded; else loading">
     <li *ngFor="let album of albums">
