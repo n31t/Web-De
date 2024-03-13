@@ -1,0 +1,16 @@
+button {
+    background-color: rgb(255, 30, 30);
+    color: white;
+    border: 0.0px;
+    padding-right: 40px;
+    padding-left: 40px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+btn-add {
+    background-color: rgb(0, 222, 41);
+}
+

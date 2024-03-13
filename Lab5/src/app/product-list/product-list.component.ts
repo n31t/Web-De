@@ -32,7 +32,7 @@ export class ProductListComponent {
     window.alert('You will be notified when the product goes on sale');
   }
   onDeleteProduct(productDelete: Product) {
-    const index = this.products.findIndex(product => product === productDelete);
+    const index = this.products.findIndex(product => product.id === productDelete.id);
     if (index !== -1) {
       this.products.splice(index, 1);
     }

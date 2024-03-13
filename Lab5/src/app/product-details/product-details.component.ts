@@ -20,8 +20,9 @@ export class ProductDetailsComponent implements OnInit{
   }
 
   like(product: Product){
+    if (!this.product) return;
     window.alert('Your like has been added');
-    product.likes+=1;
+    this.product.likes+=1;
   }
 
 
