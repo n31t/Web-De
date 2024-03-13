@@ -3,8 +3,9 @@
 
 <p>{{album.title}}</p>
 
-<input type="text" placeholder="{{album.title}}" [(ngModel)]="title">
-<button (click)="saveTitle()">Save</button>
+<input *ngIf="album.title" type="text" placeholder="{{album.title}}" [(ngModel)]="title">
+<button *ngIf="album.title" (click)="saveTitle()">Save</button>
+
 <br>
 
-<a routerLink="photos">Photo</a>
+<a *ngIf="album.title" routerLink="photos">Photo</a>
