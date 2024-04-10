@@ -10,7 +10,7 @@ from api.models import Category, Product
 def product_list(request):
     if (request.method == "GET"):
         products = Product.objects.all()
-        products_json = [products.to_json() for product in products]
+        products_json = [product.to_json() for product in products]
         return JsonResponse(products_json, safe=False)
     elif (request.method == "POST"):
         data = json.loads(request.body)
